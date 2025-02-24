@@ -1,4 +1,4 @@
-package com.example.basicapplication
+package com.anrlab.app
 
 interface Observer<T> {
     fun whenAppReady(obj : T?)

@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">BasicApplication</string>
+    <string name="app_name">ANRLab</string>
+    <string name="threadsleep">Thread sleep</string>
+    <string name="infiniteloop">Infinite loop</string>
+    <string name="deadlock">Dead lock</string>
+    <string name="min_anr_duration">Min ANR duration:</string>
+    <string name="report_mode">Report mode:</string>
+    <string name="filter_report">Filter report:</string>
+    <string name="behaviour">Behaviour:</string>
 </resources>

@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.embrace)
 }
 
 android {
-    namespace = "com.example.basicapplication"
+    namespace = "com.anrlab.app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.basicapplication"
+        applicationId = "com.anrlab.app"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -36,17 +37,15 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(project(":mylibrary"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
-    implementation("io.github.farimarwat:grizzly:2.1")
+    implementation(libs.embrace.android.sdk)
 }

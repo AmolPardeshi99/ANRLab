@@ -1,4 +1,4 @@
-package com.example.basicapplication
+package com.anrlab.app
 
 import org.junit.Test
 

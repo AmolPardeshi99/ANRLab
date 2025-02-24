@@ -11,6 +11,7 @@ material = "1.12.0"
 activity = "1.9.0"
 constraintlayout = "2.1.4"
 lifecycleRuntime = "2.8.2"
+embrace = "7.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -24,8 +25,14 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-lifecyclr-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntime"}
+embrace-android-sdk = { group = "io.embrace", name = "embrace-android-sdk", version.ref = "embrace" }
+embrace-android-core = { group = "io.embrace", name = "embrace-android-core", version.ref = "embrace" }
+embrace-android-features = { group = "io.embrace", name = "embrace-android-features", version.ref = "embrace" }
+embrace-android-payload = { group = "io.embrace", name = "embrace-android-payload", version.ref = "embrace" }
+
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
+embrace = { id = "io.embrace.swazzler", version.ref = "embrace" }
 

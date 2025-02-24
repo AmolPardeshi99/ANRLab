@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BasicApplication"
+rootProject.name = "ANRLab"
 include(":app")
 include(":mylibrary")
