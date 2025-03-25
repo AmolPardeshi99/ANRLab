@@ -42,18 +42,14 @@ public class MyApp extends Application {
 
                 Log.i(TAG, "Error was successfully serialized");
 
-                Log.d(TAG, "ANR Detected-"+error);
-            }
-        }).setANRInterceptor(new ANRWatchDog.ANRInterceptor() {
-            @Override
-            public long intercept(long duration) {
-                long ret = MyApp.this.duration * 1000 - duration;
-                if (ret > 0)
-                    Log.w(TAG, "Intercepted ANR that is too short (" + duration + " ms), postponing for " + ret + " ms.");
-                return ret;
+                Log.d(TAG, "ANR Detected-"+error.getStackTrace().toString());
             }
         });
 
+        new ANRWatcher(
+                100,
+                700
+        ).startMonitoring();
         anrWatchDog.start();
     }
 }
