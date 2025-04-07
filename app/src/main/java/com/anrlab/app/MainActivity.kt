@@ -114,7 +114,7 @@ class MainActivity : Activity() {
     companion object {
         private fun Sleep(context: Context) {
             try {
-                Thread.sleep((8 * 1000).toLong())
+                Thread.sleep((context.applicationContext as MyApp).duration * 1000.toLong())
                 Log.d(TAG, "The thread wake up after 8 sec")
 //                Toast.makeText(context.applicationContext, "The thread wake up after 8 sec", Toast.LENGTH_SHORT).show()
             } catch (e: InterruptedException) {

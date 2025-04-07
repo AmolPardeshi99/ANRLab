@@ -1,4 +1,4 @@
-package com.anrlab.app;
+package com.anrlab.app.v1;
 
 /*
  * The MIT License (MIT)

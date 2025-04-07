@@ -6,6 +6,10 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import androidx.annotation.NonNull;
 
+import com.anrlab.app.v1.ANRError;
+import com.anrlab.app.v1.ANRWatchDog;
+import com.anrlab.app.v2.ANRWatcher;
+
 import io.embrace.android.embracesdk.Embrace;
 
 
